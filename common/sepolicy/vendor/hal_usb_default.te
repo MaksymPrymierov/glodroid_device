@@ -1,0 +1,5 @@
+allow hal_usb_default configfs:dir { search write add_name };
+allow hal_usb_default configfs:file { create write open };
+
+allow hal_usb_default functionfs:dir search;
+allow hal_usb_default functionfs:file read;
